@@ -1,0 +1,17 @@
+{
+  "name": "selyek-dashboard",
+  "version": "2.0.2",
+  "private": true,
+  "description": "SELYEK — Login, Dashboard & Locations",
+  "scripts": {
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "start": "npm run start --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
